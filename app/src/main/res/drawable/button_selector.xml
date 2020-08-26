@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="false"><shape>
+        <gradient android:angle="270" android:centerColor="#F4F4F4" android:centerY="0.95"  android:startColor="#F4F4F4" android:endColor="#F4F4F4" />
+    </shape></item>
+    <item android:state_pressed="true"><shape>
+        <gradient android:angle="270" android:centerColor="#26000000" android:centerY="0.95" android:endColor="@color/new_weex_button_bg" android:startColor="#26000000" />
+    </shape></item>
+    <item android:state_pressed="false"><shape>
+        <gradient android:angle="270" android:centerColor="@color/new_weex_button_bg" android:centerY="0.95" android:endColor="#cccccc" android:startColor="@color/new_weex_button_bg" />
+    </shape></item>
+
+</selector>

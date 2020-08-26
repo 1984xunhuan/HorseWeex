@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/loading_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+
+    <ImageView
+        android:id="@+id/iv_splash"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@mipmap/splash"
+        android:scaleType="fitXY"
+        android:layout_alignParentTop="true"
+        
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/note_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="150dp"
+        android:gravity="center_horizontal"
+        android:text="@string/app_launching"
+        android:textColor="@color/g999999"
+        android:textSize="12sp" />
+
+</RelativeLayout>

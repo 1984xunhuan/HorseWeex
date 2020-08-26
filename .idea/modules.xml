@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/HorseWeex.iml" filepath="$PROJECT_DIR$/HorseWeex.iml" group="HorseWeex" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="HorseWeex/app" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/java/java.iml" filepath="$PROJECT_DIR$/.idea/modules/java/java.iml" group="HorseWeex/java" />
+    </modules>
+  </component>
+</project>

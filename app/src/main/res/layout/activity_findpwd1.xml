@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eeeeee"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/title_bar_layout" />
+
+    <View
+        android:layout_height="1px"
+        android:layout_width="match_parent"
+        android:background="#e0e0e0"
+        android:layout_below="@+id/title"
+        />
+
+        <LinearLayout
+            android:id="@+id/title1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal" >
+
+        <TextView
+            style="@style/text_weex_style_common"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:text="手机号 :" />
+
+        <EditText
+            android:id="@+id/et_phone"
+            style="@style/edit_weex_text_style_common"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/edittext_frame_selector"
+            android:hint="请输入手机号"
+            android:maxLength="11">
+        </EditText>
+
+    </LinearLayout>
+
+    <View
+        android:layout_height="1px"
+        android:layout_width="match_parent"
+        android:background="#e0e0e0"
+        android:layout_below="@+id/et_phone"
+        />
+
+    <LinearLayout
+        android:id="@+id/title2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            style="@style/text_weex_style_common"
+            android:text="验证码：" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40dp">
+
+            <EditText
+                android:id="@+id/et_smsVerCode"
+                style="@style/edit_weex_text_style_common_checkcode_et"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:hint="请输入短信验证码"
+                android:background="@drawable/edittext_frame_selector"
+                android:inputType="numberSigned"
+                android:maxLength="6" >
+            </EditText>
+
+            <Button
+                android:id="@+id/checkcode_btn"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/button_selector"
+                android:gravity="center"
+                android:text="获取验证码"
+                android:textColor="#ffffff"
+                android:textSize="17sp"
+                android:onClick="onClickForSendVerCode"
+                />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_height="1px"
+        android:layout_width="match_parent"
+        android:background="#e0e0e0"
+        android:layout_below="@+id/title1"
+        />
+
+    <TextView
+        android:id="@+id/tv_tostepthree"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/button_selector"
+        android:gravity="center"
+        android:text="下一步"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:onClick="onClickForFindPwdNext"
+        />
+
+</LinearLayout>

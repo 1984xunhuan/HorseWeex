@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eeeeee"
+    >
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/title_bar_layout" />
+
+    <View
+        android:layout_height="1px"
+        android:layout_width="match_parent"
+        android:background="#e0e0e0"
+        android:layout_below="@+id/title"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/new_phone_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="36dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp" >
+            <EditText
+                android:id="@+id/et_phone"
+                style="@style/edit_weex_text_style_common"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/edittext_frame_selector"
+                android:hint="请输入手机号"
+                android:maxLength="11"
+                android:paddingLeft="110dp"
+                >
+            </EditText>
+
+            <TextView
+                style="@style/text_weex_style_common"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:text="手机号 :" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/new_sms_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="36dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp" >
+            <EditText
+                android:id="@+id/et_smsVerCode"
+                style="@style/edit_weex_text_style_common"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/edittext_frame_selector"
+                android:hint="请输入短信验证码"
+                android:maxLength="6"
+                android:paddingLeft="110dp"
+                android:layout_alignParentTop="true"
+                
+                android:layout_alignParentStart="true">
+            </EditText>
+
+            <TextView
+                style="@style/text_weex_style_common_register"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:text="短信验证码 :" />
+
+            <Button
+                android:id="@+id/checkcode_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="2dp"
+                android:background="@drawable/button_selector"
+                android:gravity="center"
+                android:text="发送验证码"
+                android:textColor="#ffffff"
+                android:textSize="17sp"
+                android:onClick="onClickForSendVerCode"
+                />
+        </RelativeLayout>
+
+        <View
+            android:layout_height="1px"
+            android:layout_width="match_parent"
+            android:background="#e0e0e0"
+            android:layout_below="@+id/new_sms_layout"
+            />
+
+        <RelativeLayout
+            android:id="@+id/new_psw_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="36dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_below="@+id/new_sms_layout"
+            android:layout_marginTop="20dp" >
+
+            <EditText
+                android:id="@+id/et_newPwd"
+                style="@style/edit_weex_text_style_common"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/edittext_frame_selector"
+                android:hint="请输入登录密码"
+                android:maxLength="16"
+                android:paddingLeft="110dp"
+                android:password="true" >
+            </EditText>
+
+            <TextView
+                style="@style/text_weex_style_common_register"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:text="登录密码 :" />
+        </RelativeLayout>
+
+        <View
+            android:layout_height="1px"
+            android:layout_width="match_parent"
+            android:background="#e0e0e0"
+            android:layout_below="@+id/new_psw_layout"
+            />
+
+        <RelativeLayout
+            android:id="@+id/new_psw_layoutt"
+            android:layout_width="fill_parent"
+            android:layout_height="36dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_below="@+id/new_psw_layout"
+            android:layout_marginTop="20dp" >
+
+            <EditText
+                android:id="@+id/et_reptNewPwd"
+                style="@style/edit_weex_text_style_common"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/edittext_frame_selector"
+                android:hint="请再次输入密码"
+                android:maxLength="20"
+                android:paddingLeft="110dp"
+                android:password="true" >
+            </EditText>
+
+            <TextView
+                style="@style/text_weex_style_common_register"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:text="确认密码 :" />
+        </RelativeLayout>
+
+        <View
+            android:layout_height="1px"
+            android:layout_width="match_parent"
+            android:background="#e0e0e0"
+            android:layout_below="@+id/new_psw_layoutt"
+            />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/submit_btn"
+        android:layout_width="fill_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="24dp"
+        android:clickable="false"
+        android:text="完成"
+        android:textColor="#ffffff"
+        android:background="@drawable/button_selector"
+        android:textSize="22sp"
+        android:onClick="onClickForRegisterUser"
+        />
+
+    <android.inputmethodservice.KeyboardView
+        android:id="@+id/keyboard_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#eeeeee"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:keyTextColor="#0175d9"
+        android:paddingTop="2dp"
+        android:shadowColor="#ffffff"
+        android:shadowRadius="0.0"
+        android:visibility="visible" />
+</RelativeLayout>

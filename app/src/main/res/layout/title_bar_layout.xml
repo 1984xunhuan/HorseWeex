@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="52dp"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/app_left_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:clickable="true"
+        android:padding="15.0dip"
+        android:src="@mipmap/back_focus_weex" />
+
+    <TextView
+        android:id="@+id/app_title_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="@string/app_name"
+        android:textColor="@color/black"
+        android:textSize="22sp" >
+    </TextView>
+
+    <LinearLayout
+        android:id="@+id/app_right_view"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@id/app_title_text"
+        android:gravity="right|center_vertical"
+        android:minWidth="20dp"
+        android:orientation="horizontal" >
+    </LinearLayout>
+
+    <!-- 用于控制上方返回时关闭soft keyboard -->
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="0.1dp"
+        android:layout_height="0.1dp"
+        android:visibility="invisible" />
+
+</RelativeLayout>

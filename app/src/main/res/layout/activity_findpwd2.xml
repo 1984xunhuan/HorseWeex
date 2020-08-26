@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eeeeee"
+    >
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/title_bar_layout" />
+
+    <View
+        android:layout_height="1px"
+        android:layout_width="match_parent"
+        android:background="#e0e0e0"
+        android:layout_below="@+id/title"
+        />
+
+    <LinearLayout
+        android:id="@+id/new_find_psw_input"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/phonenum_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="36dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="18dp" >
+
+            <!--
+            <TextView
+                android:id="@+id/et_phone"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:textColor="#666666"
+                android:text="请选择要修改的用户名"
+                android:textSize="17sp" >
+            </TextView>
+            -->
+            <RadioGroup
+                android:id="@+id/gadiogroup"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp" >
+            </RadioGroup>
+
+            <!--
+            <ImageView
+                android:id="@+id/arrow_pull_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@mipmap/arrow_down_big" />
+                -->
+        </RelativeLayout>
+
+        <View
+            android:layout_height="1px"
+            android:layout_width="match_parent"
+            android:background="#e0e0e0"
+            android:layout_below="@+id/new_find_psw_input"
+            />
+
+        <RelativeLayout
+            android:id="@+id/new_psw_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="36dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_below="@+id/phonenum_layout"
+            android:layout_marginTop="18dp" >
+
+            <EditText
+                android:id="@+id/et_newPwd"
+                style="@style/edit_weex_text_style_common"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/edittext_frame_selector"
+                android:hint="请输入新密码"
+                android:textSize="15sp"
+                android:maxLength="16"
+                android:paddingLeft="80dp"
+                android:textCursorDrawable="@null"
+                android:password="true" >
+            </EditText>
+
+
+
+            <TextView
+                style="@style/text_weex_style_common"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:text="新密码 :" />
+        </RelativeLayout>
+
+        <View
+            android:layout_height="1px"
+            android:layout_width="match_parent"
+            android:background="#e0e0e0"
+            android:layout_below="@+id/new_find_psw_input"
+            />
+
+
+       <RelativeLayout
+            android:id="@+id/new_psw_layoutt"
+            android:layout_width="fill_parent"
+            android:layout_height="36dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_below="@+id/new_psw_layout"
+            android:layout_marginTop="18dp" >
+
+            <EditText
+                android:id="@+id/et_reptNewPwd"
+                style="@style/edit_weex_text_style_common"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/edittext_frame_selector"
+                android:hint="请再次输入密码"
+                android:maxLength="20"
+                android:textSize="15sp"
+                android:paddingLeft="120dp"
+                android:password="true" >
+            </EditText>
+
+            <TextView
+                style="@style/text_weex_style_common"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:text="确认新密码 :" />
+        </RelativeLayout>
+
+
+        <View
+            android:layout_height="1px"
+            android:layout_width="match_parent"
+            android:background="#e0e0e0"
+            android:layout_below="@+id/new_psw_layoutt"
+            />
+
+        <TextView
+            android:id="@+id/tv_done"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/button_selector"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:text="确定"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:onClick="onClickForModifyPwd"
+            >
+        </TextView>
+    </LinearLayout>
+
+    <android.inputmethodservice.KeyboardView
+        android:id="@+id/keyboard_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#eeeeee"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:keyTextColor="#0175d9"
+        android:paddingTop="2dp"
+        android:shadowColor="#ffffff"
+        android:shadowRadius="0.0"
+        android:visibility="visible" />
+
+</RelativeLayout>

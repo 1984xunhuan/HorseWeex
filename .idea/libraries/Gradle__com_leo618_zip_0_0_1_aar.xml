@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Gradle: com.leo618:zip:0.0.1@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/3951651afa2c514947efe58c2163eada/jetified-zip-0.0.1/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/3951651afa2c514947efe58c2163eada/jetified-zip-0.0.1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/3951651afa2c514947efe58c2163eada/jetified-zip-0.0.1/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.leo618/zip/0.0.1/c5b6584d6037c9b0b27880f8a9418be21a2ec03b/zip-0.0.1-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.leo618/zip/0.0.1/ee5e54e498c74b0a6e04b268c342672fc3488e46/zip-0.0.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

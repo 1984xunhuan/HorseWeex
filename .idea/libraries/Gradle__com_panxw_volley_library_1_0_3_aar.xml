@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Gradle: com.panxw.volley:library:1.0.3@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/aed05ba125b62e84acea45d8e99957ed/jetified-library-1.0.3/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/aed05ba125b62e84acea45d8e99957ed/jetified-library-1.0.3/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/aed05ba125b62e84acea45d8e99957ed/jetified-library-1.0.3/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.panxw.volley/library/1.0.3/34d4b52d3ff793c3d05af0571437f2a99458c756/library-1.0.3-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.panxw.volley/library/1.0.3/858ae7917b8473591540bb6e53661255104fe35a/library-1.0.3-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

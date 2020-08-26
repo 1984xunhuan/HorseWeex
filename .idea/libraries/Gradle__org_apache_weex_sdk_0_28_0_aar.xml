@@ -1,0 +1,16 @@
+<component name="libraryTable">
+  <library name="Gradle: org.apache.weex:sdk:0.28.0@aar">
+    <ANNOTATIONS>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/6456076eaccfac503ac5f38526da1cac/jetified-sdk-0.28.0/annotations.zip!/" />
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/6456076eaccfac503ac5f38526da1cac/jetified-sdk-0.28.0/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/6456076eaccfac503ac5f38526da1cac/jetified-sdk-0.28.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/6456076eaccfac503ac5f38526da1cac/jetified-sdk-0.28.0/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.weex/sdk/0.28.0/6245403a138b66e7a3a5543fda6f6ac3992b7dd6/sdk-0.28.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
